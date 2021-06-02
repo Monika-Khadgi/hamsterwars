@@ -7,9 +7,9 @@
 }
 
 .img-responsive {
-  /* height: auto; */
+  height: auto;
   width: 60%;
-  height: 60%;
+  /* height: 60%; */
 }
 
 .list{
@@ -20,11 +20,13 @@
   grid-column-gap: 25px;
   grid-row-gap: 25px;
 }
+
 .box1{
   display: flex;
   justify-content: center;
   background-color: bisque;
 }
+
 .box1:hover{
   background-color:whitesmoke;
   border-radius: 4px;
