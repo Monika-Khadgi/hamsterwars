@@ -1,0 +1,22 @@
+.index-img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10%;
+  background-color: bisque;
+  width: auto;
+}
+
+.hampster_home_single {
+  max-width: 50%;
+}
+
+.hampster_home_many {
+  max-width: 80%;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

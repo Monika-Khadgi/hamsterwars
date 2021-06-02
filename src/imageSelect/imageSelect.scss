@@ -1,0 +1,63 @@
+.imageSelect-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: bisque;
+  height: auto;
+
+
+  img {
+    width: 300px;
+    height: 300px;
+
+    }
+    .image1{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 350px;
+      width: 360px;
+      border: 3px #cc8b65 solid;
+      border-radius: 5%;
+      
+
+    }
+    .image1:hover{
+      cursor: pointer;
+      border:6px #cc8b65 solid;
+      transition: all 0.2s ease-out;
+      
+    }
+
+    .image2:hover{
+      cursor: pointer;
+      border:6px #cc8b65 solid;
+      transition: all 0.2s ease-out;
+    }
+
+     .image2{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 350px;
+      width: 360px;
+      border: 3px #cc8b65 solid;
+      border-radius: 5%;
+    }
+  
+  }
+  .wrapperBorder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+    height: 700px ;
+    width: 800px;
+    background-color:bisque ;
+    }
+ 
+
+
