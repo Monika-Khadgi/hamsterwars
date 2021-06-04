@@ -1,24 +1,20 @@
 import React, { Component } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import './App.css';
-import Example from './imageSelect/imageSelect';
-
-
 
 import {
   BrowserRouter as Router,
   Route,
-  NavLink,
-  Switch,
-  Link,
-  Redirect
+  Switch
 } from "react-router-dom";
 
 //pages
 import MainPage from "./pages";
 import NotFoundPage from "./pages/404";
-import UsersPage from "./pages/users";
-import competition from "./pages/competition";
+import competition from "./components/Battle/battle";
+import Gallery from "./components/Gallery/gallery";
+import AddHamsterForm from './components/Form/AddHamsterForm';
+
 
 class App extends Component {
   render(){
@@ -26,14 +22,13 @@ class App extends Component {
       <Router>
         <div>
         <Navbar />
-       
-        
-        <switch>
+        <Switch>
           <Route exact path="/" component={MainPage} />
           <Route exact path="/404"component={NotFoundPage} /> 
-          <Route exact path="/users"component={UsersPage} />
+          <Route exact path="/gallery"component={Gallery} />
           <Route exact path="/competition"component={competition} />
-          </switch>
+          <Route exact path="/add-hamster"component={AddHamsterForm} />
+        </Switch>
         </div>
     </Router>
     );

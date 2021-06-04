@@ -1,0 +1,116 @@
+.container {
+  padding: 3rem;
+  background-color: bisque;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-del {
+  padding-top: 5px;
+  cursor: pointer;
+  display: flex;
+}
+
+.centered {
+  float: none;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center
+}
+
+.form-input-btn {
+  font-family: 'Josefin Sans', cursive;
+  display: flex;
+  font-size: 16px;
+  border-radius: 10px;
+  color: white !important;
+  background-color: #cc8b65;
+  margin: auto;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-bottom: 3rem;
+  text-decoration: none;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
+  border: 1px black;
+  grid-column-gap: 25px;
+  grid-row-gap: 70px;
+  margin-bottom: 1.5rem;
+}
+
+.box1 {
+  width: 260px;
+  height: 180px;
+  padding: 10px;
+  background: bisque;
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: 1s ease-out;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.box1:hover {
+  cursor: pointer;
+  opacity: 0.2;
+}
+
+.image-wrapper {
+  position: relative;
+  cursor: pointer;
+  width: 300px;
+  height: 230px;
+}
+
+.hamster-img {
+  display: block; 
+  height: 230px;
+  width: 300px;
+  border-radius: 20px;
+  background: bisque;
+  border: 3px solid #cc8b65;
+}
+
+.hamster-info-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: left; 
+  opacity: 0;
+  transition: opacity 0.25s;
+  border-radius: 20px;
+  border: 3px solid transparent;
+}
+
+.hamster-info-box p {
+  padding-left: 2rem;
+}
+
+.hamster-info-box > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.hamster-info-box:hover {
+  opacity: 1;
+}
+
+.hamster-info-box:hover > * {
+  transform: translateY(0);
+}

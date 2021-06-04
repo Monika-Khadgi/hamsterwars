@@ -8,14 +8,14 @@ export const MenuItems = [
 }, 
 
 {
-  title:'Competition',
-  url:'/competition',
+  title:'Battle',
+  url:'/battle',
   cName:'nav-links'
 },
 
 {
-  title:'Hamster',
-  url:'/users',
+  title:'Gallery',
+  url:'/gallery',
   cName:'nav-links'
 }
 ]

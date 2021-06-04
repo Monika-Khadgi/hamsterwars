@@ -1,13 +1,13 @@
-import React from 'react'
-import './Form.css'
-import { FormSignup } from "./FormSignup";
+// import React from 'react'
+// import './Form.css'
+// import { FormSignup } from "./FormSignup";
  
- export const Form = () => {
-   return (
-     <div>
-       <FormSignup/>
-     </div>
-   )
- } 
+//  export const Form = () => {
+//    return (
+//      <div>
+//        <FormSignup/>
+//      </div>
+//    )
+//  } 
  
 

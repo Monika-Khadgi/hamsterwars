@@ -1,0 +1,13 @@
+body {
+  font-family: 'Josefin Sans', cursive !important;
+}
+
+.page-title {
+  margin-bottom: 2rem !important;
+  font-family: 'Josefin Sans', cursive !important;
+}
+
+.submit {
+  margin-top: 1.5rem !important;
+  background-color: #cc8b65 !important;
+}
