@@ -12,7 +12,7 @@ const MainPage =() => {
     <div className="index-img">
      
      <div className='section'><img className='centered hampster_home_single' src={hampster_home_single} /></div>
-     <div className='text-box'><h1>Welcome to Hamsterwar</h1>
+     <div className='text-box'><h1>Welcome to Hamster war</h1>
      <p>This is a place for the hamster lovers. There are two photographs of adorable hamsters
        side by side and viewer can  vote for the one they think is the cutest. The "Battles" are randomly
        selected. </p> </div>
