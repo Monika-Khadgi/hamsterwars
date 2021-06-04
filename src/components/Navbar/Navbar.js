@@ -1,30 +1,28 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {MenuItems} from "./MenuItems"
 import './Navbar.css'
 
-
-class Navbar extends Component {
-state = { clicked: false}
-
-  render(){
+const Navbar = () => {
+  const [activePage, setActivePage] = useState('');
     return(
       <nav className ="NavbarItems">
         <h1 className="navbar-logo">HAMSTERS WAR</h1>
-        <ul className={this.state.clicked ? 'nav-menu active': 'nav-menu'} >
-          {MenuItems.map((item, index) => {
-            return (
+        <ul className='nav-menu'>
+         { MenuItems.map((item, index) => {
+              return (
               <li key= {index}>
-                <a className={item.cName} href={item.url}>
+                <Link onClick={() => setActivePage(item.url)} className={item.url===activePage ? 'nav-links active': 'nav-links'} to={item.url}>
                   {item.title}
-                </a> 
+                </Link> 
               </li>
-            )
-          })}
+              )
+          })
+          } 
           
         </ul>
       </nav>
     )
-  }
 }
 
 export default Navbar;
