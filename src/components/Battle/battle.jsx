@@ -114,21 +114,21 @@ const Competition = () => {
     
     return(
       <div className='imageSelect-wrapper'>
-      <div>Which is the cuttes?</div>
       <div className='wrapperBorder'>
         <img className='result-image' src={`img/${hamsterLeftRef.current.imgName}`} alt="Results" />
         <div className="hamster-name-battle">{hamsterLeftRef.current.name}</div>
         <img className='result-image right' src={`img/${hamsterRightRef.current.imgName}`} alt="Results" />
         <div className="hamster-name-battle">{hamsterRightRef.current.name}</div>
       </div>
-      <div className='winner'>{winner.name} is the winner for current battle</div>
-      <div className='percentage-win'>Total win for {winner.name}: {(winner.wins/winner.games)*100}%</div>
+      <div className='winner'>{winner.name} is the cutest for current battle</div>
+      <div className='percentage-win'>Total win for {winner.name}: {((winner.wins/winner.games)*100).toFixed(2)}%</div>
     </div>
     )								
   }
   
   return (
     <div className='battle-wrapper'>
+      <div className="title-battle">Which is the cutest?</div>
       {showResult && renderResult()}
       {/* <h2 className='battle-title'>{hamsterLeft && hamsterLeft.name} vs {hamsterRight && hamsterRight.name}</h2> */}
       <div className='imageSelect-wrapper'>

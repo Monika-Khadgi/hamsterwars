@@ -20,6 +20,10 @@ After some research in Internet, I found out that I have not set node engine in 
 
 * Initally, I was not able to display hamster images in gallery. Later, I moved all of my images to public folder then it worked.
 
+* There was a bug at backend part while getting random id of hamster and I found it while working with frontend. I managed to fix the bug.
+
+* I couldn't manage to upload the new image while adding new hamster. User can add hamster with information only.
+
 ## Available scripts to run the project
 
 In the project directory, you can run:
