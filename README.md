@@ -11,7 +11,7 @@ The app consist of home page, battle page and gallery page.
 
 ## Challanges
 
-- One of the main challenges I ran into was while posting hamster info from frontend to backend. Previously, I was using port 6000 for backend and 3000 for frontend which was giving me authetication error. I solved the problem by changing the backend port to 8080.
+- One of the main challenges I ran into was while posting hamster info from frontend to backend in my local machine. Previously, I was using port 6000 for backend and 3000 for frontend which was giving me authetication error. I solved the problem by changing the backend port to 8080.
 
 * In the begining I was not able to get the hamster's information on hovering over hamster image. It took me a while to fix the css and get required result.
 
@@ -19,6 +19,8 @@ The app consist of home page, battle page and gallery page.
 After some research in Internet, I found out that I have not set node engine in my package.json file.
 
 * Initally, I was not able to display hamster images in gallery. Later, I moved all of my images to public folder then it worked.
+
+* While deleting hamster from the web interface, the page was not refreshing by itself. I used react life cycle to fix the problem.
 
 * There was a bug at backend part while getting random id of hamster and I found it while working with frontend. I managed to fix the bug.
 
