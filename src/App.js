@@ -11,7 +11,7 @@ import {
 //pages
 import MainPage from "./pages";
 import NotFoundPage from "./pages/404";
-import competition from "./components/Battle/battle";
+import Competition from "./components/Battle/battle.jsx";
 import Gallery from "./components/Gallery/gallery";
 import AddHamsterForm from './components/Form/AddHamsterForm';
 
@@ -26,8 +26,9 @@ class App extends Component {
           <Route exact path="/" component={MainPage} />
           <Route exact path="/404"component={NotFoundPage} /> 
           <Route exact path="/gallery"component={Gallery} />
-          <Route exact path="/competition"component={competition} />
+          <Route exact path="/battle"component={Competition} />
           <Route exact path="/add-hamster"component={AddHamsterForm} />
+          <Route component={NotFoundPage} />
         </Switch>
         </div>
     </Router>
