@@ -13,8 +13,8 @@ const Competition = () => {
   const fetchRightHamster = useCallback(() => {
     axios({
       "method": "GET",
-      //"url": "https://safe-harbor-15583.herokuapp.com/api/hamsters/random"
-      "url": "http://localhost:8080/api/hamsters/random"
+      "url": "https://safe-harbor-15583.herokuapp.com/api/hamsters/random"
+      //"url": "http://localhost:8080/api/hamsters/random"
     })
       .then((response) => {
         setHamsterRight(response.data)
