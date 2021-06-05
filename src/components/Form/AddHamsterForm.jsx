@@ -19,10 +19,10 @@ class AddHamsterForm extends Component {
 
     this.state = {
       name: '',
-      wins: '',
-      defeats: '',
+      wins: 0,
+      defeats: 0,
       age: '',
-      games: '',
+      games: 0,
       loves: '',
       favFood: '',
       imgName: '',
@@ -90,33 +90,7 @@ class AddHamsterForm extends Component {
                     onChange={this.handleInputChange}
                   />
                 </Grid>
-                <Grid item xs={12} sm={6}>
-                  <TextField
-                    variant="outlined"
-                    type="number"
-                    required
-                    fullWidth
-                    id="wins"
-                    label="wins"
-                    name="wins"
-                    autoComplete="wins"
-                    onChange={this.handleInputChange}
-                  />
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <TextField
-                    variant="outlined"
-                    type="number"
-                    required
-                    fullWidth
-                    name="defeats"
-                    label="defeats"
-                    id="defeats"
-                    autoComplete="defeats"
-                    onChange={this.handleInputChange}
-                  />
-                </Grid>
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12}>
                   <TextField
                     variant="outlined"
                     type="number"
@@ -126,19 +100,6 @@ class AddHamsterForm extends Component {
                     label="age"
                     name="age"
                     autoComplete="age"
-                    onChange={this.handleInputChange}
-                  />
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <TextField
-                    variant="outlined"
-                    type="number"
-                    required
-                    fullWidth
-                    id="games"
-                    label="games"
-                    name="games"
-                    autoComplete="games"
                     onChange={this.handleInputChange}
                   />
                 </Grid>

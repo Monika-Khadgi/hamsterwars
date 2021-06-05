@@ -81,6 +81,7 @@ a {
   border-radius: 20px;
   background: bisque;
   border: 3px solid #cc8b65;
+  cursor: pointer;
 }
 
 .hamster-info-box {
