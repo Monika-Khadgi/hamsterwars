@@ -57,11 +57,19 @@
   width: 180px;
   border-radius: 20px;
   background: bisque;
-  border: 3px solid skyblue;
+  border: 3px solid rgb(225, 56, 54);
 }
 
 .winner {
   display: block;
+}
+
+.result-image-winner {
+  border: 3px solid rgb(15, 157, 15);
+}
+
+.result-image-loser {
+  border: 3px solid rgb(225, 56, 54);
 }
 
 .select-image-wrapperBorder {

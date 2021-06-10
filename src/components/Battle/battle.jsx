@@ -7,6 +7,7 @@ const Competition = () => {
   const [hamsterLeft, setHamsterLeft] = useState('');
   const [showResult, setShowResult] = useState(false);
   const [winner, setWinner] = useState({});
+  const [winnerColor, setWinnerClass] = useState('');
   const hamsterRightRef = useRef('');
   const hamsterLeftRef = useRef('');
 
@@ -50,7 +51,9 @@ const Competition = () => {
 
   const hamsterClick = (clicked) => {
     const headers = { 'Content-type': 'application/json' };
+    
     if (clicked === 'left') {
+      setWinnerClass('result-image-winner');
       const newWinData = { wins: hamsterLeft.wins + 1, games: hamsterLeft.games + 1 };
       const newLostData = { defeats: hamsterRight.defeats + 1, games: hamsterRight.games + 1 };
 
@@ -82,7 +85,7 @@ const Competition = () => {
         })
     }
     else if (clicked === 'right') {
-
+      setWinnerClass('result-image-winner');
       const newWinData = { wins: hamsterRight.wins + 1, games: hamsterRight.games + 1 };
       const newLostData = { defeats: hamsterLeft.defeats + 1, games: hamsterLeft.games + 1 };
 
@@ -118,22 +121,20 @@ const Competition = () => {
   }
   const renderResult = () => {
     return (
-      //<div className='imageSelect-wrapper'>
         <div className='result-wrapperBorder'>
           <div className="result-img-left">
-            <img className='result-image' src={`img/${hamsterLeftRef.current.imgName}`} alt="Results" />
+            <img className={`result-image ${winnerColor}`} src={`img/${hamsterLeftRef.current.imgName}`} alt="Results" />
             <p className="hamster-name-battle centered">{hamsterLeftRef.current.name}</p>
           </div>
           <div className="result-img-right">
-            <img className='result-image right' src={`img/${hamsterRightRef.current.imgName}`} alt="Results" />
+            <img className={`result-image ${winnerColor}`} src={`img/${hamsterRightRef.current.imgName}`} alt="Results" />
             <p className="hamster-name-battle centered">{hamsterRightRef.current.name}</p>
           </div>
           <div className="winner-info">
             <h3 className='winner'>{winner.name} is the cutest for current battle</h3>
-            <h4 className='percentage-win'>Total win for {winner.name}: {((winner.wins / winner.games) * 100).toFixed(2)}%</h4>
+            <p className='percentage-win'>Total win for {winner.name}: {((winner.wins / winner.games) * 100).toFixed(2)}%</p>
           </div>
         </div>
-    //  </div>
     )
   }
 
@@ -142,7 +143,7 @@ const Competition = () => {
       <div className='battle-wrapper'>
         <h1 className="title-battle centered">Which is the cutest?</h1>
         {showResult && renderResult()}
-        {/* <h2 className='battle-title'>{hamsterLeft && hamsterLeft.name} vs {hamsterRight && hamsterRight.name}</h2> */}
+        {/*<h2 className='battle-title'>{hamsterLeft && hamsterLeft.name} vs {hamsterRight && hamsterRight.name}</h2>*/}
         
           <div className='select-image-wrapperBorder'>
             {hamsterLeft &&
